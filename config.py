@@ -1,0 +1,3 @@
+wolframAPI = ''
+annaTrip = ''
+nolimitCookie = ''
