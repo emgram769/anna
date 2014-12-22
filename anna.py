@@ -1,7 +1,6 @@
 from time import sleep
 from livechanapi import *
 import wikipedia
-from pybing import Bing
 import duckduckgo
 import re
 import sys
@@ -14,11 +13,9 @@ if (len(sys.argv) < 2):
     print "Usage: python anna.py [channel]"
     exit()
 channel = sys.argv[1]
-bing = Bing(config.bingAPI)
 wolfram = wolframalpha.Client(config.wolframAPI)
 
 # globals
-curr_bing = None
 users = {}
 
 def process_chat(*args):
