@@ -117,7 +117,7 @@ def login(callback=on_chat):
     #login_response = post('https://livechan.net/login', post_params)
     #login_html = login_response.read()
 
-    cookie = cookielib.Cookie(version=0, name='password_livechan', value='jRRu12!', port=None, port_specified=False, domain='livechan.net',
+    cookie = cookielib.Cookie(version=0, name='password_livechan', value=config.nolimitCookie, port=None, port_specified=False, domain='livechan.net',
             domain_specified=False, domain_initial_dot=False,
             path='/', path_specified=True, secure=False, expires=None,
             discard=True, comment=None, comment_url=None, rest={'HttpOnly': None}, rfc2109=False)
